@@ -35,5 +35,5 @@ I am looking to understand and unpack Russian Trolls' tweets from 2016. The firs
   + Sentiment Analysis of the tweets. Do Russian trolls use positive propaganda or negative propaganda? How does this differ for each of the 5 themes?
   + A geographic map of which states / countries the trolls discuss most. How does this map change by month? How does it track versus geographies discussed tweets from major US news handles?
 
-<i>Link to Github Repo</i>: 
+<i>Link to Github Repo</i>:https://github.com/arushisax/Final_Project.git
 
