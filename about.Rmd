@@ -25,13 +25,15 @@ library(shiny)
 ## About
 I am looking to understand and unpack Russian Trolls' tweets from 2016. The first dataset that I have found is a set of CSVs from from FiveThirtyEight. This dataset includes Twitter handles connected to the Internet Research Agency, a Russian "troll factory" and a defendant in an indictment filed by the Justice Department in February 2018. The vast majority of these tweets were posted from 2015 through 2017, however I will clean this data to only focus on 2016. I have not finalized my second data set however it might be a list of events in 2016 (from Wikipedia) to correlate topicality of Russian troll tweets versus what is actually being discussed by media. Is there a time lag? If so, how long? Another potential data source to include is tweets from major US news rooms (CNN, Fox, etc.) to assess how topics and themes compare and contract between Russian Trolls and US Media.
 
-## Areas of Exploration
-Potential charts I am looking into include:
-- Do a word cloud on their common themes 
-- Pick top 5 themes from word cloud to explore further  
-- For each of the 5 themes, do a comparative distribution over time. This will help us understand - are the trolls talking about same things at same time? Or do the talk about similar topics earlier or later than the other? Is there coordination between accounts?
-- Sentiment Analysis of the tweets. Do Russian trolls use positive propaganda or negative propaganda? How does this differ for each of the 5 themes?
-- A geographic map of which states / countries the trolls discuss most. How does this map change by month? How does it track versus geographies discussed tweets from major US news handles?
 
-#Link to Github Repo: 
+## Areas of Exploration
+
+* Potential charts I am looking into include:
+  + Do a word cloud on their common themes 
+  + Pick top 5 themes from word cloud to explore further  
+  + For each of the 5 themes, do a comparative distribution over time. This will help us understand - are the trolls talking about same things at same time? Or do the talk about similar topics earlier or later than the other? Is there coordination between accounts?
+  + Sentiment Analysis of the tweets. Do Russian trolls use positive propaganda or negative propaganda? How does this differ for each of the 5 themes?
+  + A geographic map of which states / countries the trolls discuss most. How does this map change by month? How does it track versus geographies discussed tweets from major US news handles?
+
+<i>Link to Github Repo</i>: 
 
