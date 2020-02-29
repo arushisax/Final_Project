@@ -1,0 +1,33 @@
+---
+title: "gather"
+author: "Arushi Saxena"
+date: "2/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("rvest")
+library(dplyr)
+library(ggplot2)
+library(reprex)
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(gt)
+library(rvest)
+library(stringr)
+library(shiny)
+library(rvest)
+```
+
+```{r save this file locally}
+a <- read.csv(file="https://raw.githubusercontent.com/fivethirtyeight/russian-troll-tweets/master/IRAhandle_tweets_1.csv") 
+a
+```
+```{r}
+saveRDS(a, file ="RussianTweets.RDS")
+RussianTweets <- readRDS("RussianTweets.RDS")
+
+RussianTweets
+```
