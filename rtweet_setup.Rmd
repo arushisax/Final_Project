@@ -1,0 +1,58 @@
+---
+title: "MS 4 - Data Collection Overview"
+author: "Arushi Saxena"
+date: "3/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("rtweet")
+library(rtweet)
+```
+### Data Source 1: Russian Troll Tweets from FiveThirtyEight
+<b>Goal </b>: Main data source for exploration. 
+
+* Potential charts I am looking into include:
+  + Do a word cloud on their common themes 
+  + Pick top 5 themes from word cloud to explore further  
+  + For each of the 5 themes, do a comparative distribution over time. This will help us understand - are the trolls talking about same things at same time? Or do the talk about similar topics earlier or later than the other? Is there coordination between accounts?
+  + Sentiment Analysis of the tweets. Do Russian trolls use positive propaganda or negative propaganda? How does this differ for each of the 5 themes?
+  + A geographic map of which states / countries the trolls discuss most. How does this map change by month? How does it track versus geographies discussed tweets from major US news handles?
+  
+<b>Current Status</b>: There is a set of approximately 60 CSV files I have downloaded. I have learnt how to convert them to RDS to read and process them more efficiently but I am trying to assess if there is anyway to combine all 60 CSVs (or multiple CSVs into one single RDS file). I am currently doing this research via Github and believe I had found a way: https://stackoverflow.com/questions/56020249/using-r-to-merge-many-large-csv-files-across-sub-directories
+
+<b>Next Steps</b>:
+1. Convert all CSVs into RDS
+2. Begin data cleaning and word cloud analysis
+
+```{r}
+# Read and save this example file locally
+# a <- read.csv(file="https://raw.githubusercontent.com/fivethirtyeight/russian-troll-tweets/master/IRAhandle_tweets_1.csv") 
+```
+
+```{r making the RDS}
+# saveRDS(a, file ="RussianTweets.RDS")
+# RussianTweets <- readRDS("RussianTweets.RDS")
+```
+
+### Data Source 2: 2016 Tweets from Reuters Twitter handle
+<b>Goal</b>: Compare the content from Reuters Twitter handle to Russian troll tweets to see how topical the IRA tweets are and to assess time lag between certain discussion topics. I have currently narrowed in on Reuters since it is acknowledged 
+<b> Next Steps </b>: Once my Twitter Developer Access request is approved, I will follow these steps here to get a Twitter token: https://rtweet.info/articles/auth.html 
+
+```{r getting Twitter token}
+
+```
+
+
+```{r}
+#This is example from https://community.rstudio.com/t/how-to-collecting-twitter-data-from-past-year/22568/3 
+
+# tweets <- get_timelines("hadleywickham", 
+#                         n = 10000, 
+#                         language = 'en',
+#                         since = '2014-01-01', 
+#                         until = '2014-12-31')
+#                         #token = twitter_token
+```
+
