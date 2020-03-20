@@ -78,21 +78,23 @@ cleaned <- TweetFrame1 %>%
 trolltweets <- cleaned %>% 
   unnest_tokens(word, content)
 
+# Remove stop words - aka typically very common words such as "the", "of" etc
 
-#remove stop words - aka typically very common words such as "the", "of" etc
 data(stop_words)
 trolltweets <- trolltweets %>%
   anti_join(stop_words)
 
-# Remove other nonsense worlds
+# Remove other nonsense words
+
 trolltweets2 <- trolltweets %>%
   filter(!word %in% c('t.co', 'https'))
 
-#do a word count
+# Do a word count for the word cloud
+
 trolltweets3 <- trolltweets2 %>%
   count(word, sort = TRUE)
   
-
+# This generates the Word Cloud using WordCloud2 library
 wordcloud2(trolltweets3, size=0.7)
 ```
 
